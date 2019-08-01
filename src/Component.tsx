@@ -1,5 +1,6 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
+import produce, {Draft} from "../node_modules/immer/dist/immer";
 
 export interface ILikeButtonProps {
     caption: string;
@@ -7,7 +8,7 @@ export interface ILikeButtonProps {
 }
 
 export interface ILikeButtonState {
-    liked: boolean;
+    readonly liked: boolean;
 }
 
 export class LikeButton extends React.Component<ILikeButtonProps, ILikeButtonState> {
@@ -23,9 +24,18 @@ export class LikeButton extends React.Component<ILikeButtonProps, ILikeButtonSta
 
     return <button
             className="btn btn-primary"
-            onClick={() => this.setState({ liked: true }) }
+            onClick={this.onClick.bind(this)}
         >
             {this.props.caption}
         </button>;
+  }
+
+  private onClick() {
+
+      const newState = produce((draft: Draft<ILikeButtonState>) => {
+          draft.liked = true;
+      });
+
+      this.setState(newState);
   }
 }
