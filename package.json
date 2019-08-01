@@ -1,0 +1,43 @@
+{
+  "name": "template-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://branogoga@github.com/branogoga/template-react.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/branogoga/template-react/issues"
+  },
+  "homepage": "https://github.com/branogoga/template-react#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.15",
+    "@types/react": "^16.8.23",
+    "@types/react-dom": "^16.8.4",
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2",
+    "ts-loader": "^6.0.4",
+    "tslint": "^5.18.0",
+    "tslint-loader": "^3.5.4",
+    "typescript": "^3.5.2",
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5"
+  }
+}
