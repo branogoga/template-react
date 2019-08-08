@@ -1,6 +1,8 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
+
 import produce, {Draft} from "../node_modules/immer/dist/immer";
+import {FormattedMessage} from "../node_modules/react-intl/dist/index";
 
 export interface ILikeButtonProps {
     caption: string;
@@ -19,14 +21,14 @@ export class LikeButton extends React.Component<ILikeButtonProps, ILikeButtonSta
 
   public render(): React.ReactNode {
     if (this.state.liked) {
-      return this.props.finalText;
+      return <FormattedMessage id={this.props.finalText}/>;
     }
 
     return <button
             className="btn btn-primary"
             onClick={this.onClick.bind(this)}
         >
-            {this.props.caption}
+            <FormattedMessage id={this.props.caption}/>
         </button>;
   }
 

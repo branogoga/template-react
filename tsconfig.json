@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "outDir": "./dist/",
-    "rootDir": "./src/",
+    "rootDir": ".",
     "noImplicitAny": true,
     "sourceMap": true,
     "module": "es6",
@@ -14,9 +14,11 @@
     "strict": true
   },
   "include": [
-    "./src/**/*"
+    "./src/**/*",
+    "./node_modules/**/*"
   ],
   "exclude": [  
-    "dist"
+    "dist",
+    "node_modules"
   ]
 }
