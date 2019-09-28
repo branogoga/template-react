@@ -21,7 +21,11 @@ npm run build
 npm run test
 ```
 
-## Open in browser:
+## Current version on GitHub Pages:
+
+https://branogoga.github.io/template-react/
+
+## Open in local browser:
 
 ```
 index.html
