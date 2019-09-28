@@ -7,8 +7,8 @@ import { locale as messages_en } from "./translations/en";
 import { locale as messages_sk } from "./translations/sk";
 
 const messages = {
-    "en": messages_en,
-    "sk": messages_sk,
+    en: messages_en,
+    sk: messages_sk,
 };
 const language = "sk";
 
