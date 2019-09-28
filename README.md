@@ -8,3 +8,21 @@ Sample project with the basic setup needed for front-end development including:
   * Immer.js to handle state changes
 * JEST unit tests
 * AXIOS for promise-based API calls
+
+## Build:
+
+```
+npm run build
+```
+
+## Test:
+
+```
+npm run test
+```
+
+## Open in browser:
+
+```
+index.html
+```
